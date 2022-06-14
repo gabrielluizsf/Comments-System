@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
-</head>
-<body>
-   <header>
 
-   </header> 
-   <main class="main"><div class="newPost">
-    <div class="infoUser"><strong>Username</strong></div>
-  </div>
-</main>
-<script type="module" src="../controllers/com/msg.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+ 
+  <title>Welcome</title>
+</head>
+
+
+<body>
+  <header>
+
+  </header>
+  <main class="main">
+
+    <div class="newPost">
+
+      <div class="infoUser">
+      
+        <strong>Username</strong>
+      </div>
+
+      <form action="" class="msg" id="msg">
+        <textarea name="textarea" placeholder="Clique para digitar" id="textarea"></textarea>
+        <div class="iconsAndButton">
+          <div class="icons">
+          </div>
+
+          <button type="submit" id="botao" class="btnSubmitForm">Send</button>
+        </div>
+      </form>
+    </div>
+
+    <ul class="posts" id="posts"></ul>
+
+  </main>
+  <script type="module" src="../controllers/com/msg.js"></script>
 </body>
+
 </html>
